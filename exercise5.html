@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISE 5</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- EXERCISE 1 -->
+    <section class="exercise1 mt-5">
+      <div class="container">
+        <div class="card">
+          <div class="card-header bg-primary text-center">QUẢN LÝ TUYỂN SINH</div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12 text-center mt-3 diem-input">
+              <label for="inputDiemChuan">Điểm chuẩn</label>
+              <input type="number" class="form-control" id="inputDiemChuan" />
+            </div>
+          </div>
+          <div class="form-row mt-3 text-center">
+            <div class="form-group col-md-4">
+              <label for="inputDiem1">Điểm môn 1:</label>
+              <input type="number" class="form-control" id="inputDiem1" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputDiem2">Điểm môn 2:</label>
+              <input type="number" class="form-control" id="inputDiem2" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputDiem3">Điểm môn 3:</label>
+              <input type="number" class="form-control" id="inputDiem3" />
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title">ĐIỂM ƯU TIÊN</h6>
+          </div>
+          <div class="card-info1 d-flex">
+            <span>Khu vực:</span>
+            <div class="card-item d-flex mr-5">
+                <select name="khuvuc" id="khuVuc">
+                    <option value="khuvucA">A (2)</option>
+                    <option value="khuvucB">B (1)</option>
+                    <option value="khuvucC">C (0.5)</option>
+                    <option value="khuvucX">X (Chọn X nếu không thuộc khu vực ưu tiên)</option>
+                  </select>    
+            </div>
+          </div>
+          <div class="card-info2 d-flex mt-3">
+            <span>Đối tượng:</span>
+            <div class="card-item d-flex mr-5">
+                <select name="doituong" id="doiTuong">
+                    <option value="1">1 (2.5 đ)</option>
+                    <option value="2">2 (1.5 đ)</option>
+                    <option value="3">3 (1 đ)</option>
+                    <option value="0">0 (Chọn 0 nếu không thuộc đối tượng ưu tiên)</option>
+                  </select>    
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <button onclick="printResult()">Kết quả</button>
+          </div>
+          <div class="exercise1-info ">
+            <p id="demo"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- EXERCISE 2 -->
+     <section class="exercise2 my-5">
+        <div class="container">
+            <div class="card w-50 mx-auto">
+                <div class="card-header bg-info text-light text-center">
+                   TÍNH TIỀN ĐIỆN
+                </div>
+                <div class="card-body exercise2-title">
+                    <div class="form-group text-center">       
+                        <label>Họ và tên:</label>
+                        <input id="hoTen" type="text">   
+                    </div>
+                    <div class="form-group text-center">       
+                        <label>Số (kw) điện tiêu thụ:</label>
+                        <input id="dientieuthu" type="number">
+                    </div>
+                    <div class="exercise2-info mt-3 ml-2">
+                        <p>Cách tính tiền điện tiêu thụ:</p>
+                        <ul class="content">
+                            <li>
+                                50kw đầu: 500đ/kw
+                            </li>
+                            <li>
+                                50kw kế: 650đ/kw
+                            </li>
+                            <li>
+                                100kw kế: 850đ/kw
+                            </li>
+                            <li>
+                                150kw kế: 1100đ/kw
+                            </li>
+                            <li>
+                                350kw trở lên: 1300đ/kw
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="sortNumber()">Kết quả</button>
+                    </div>
+                    <div class="exercise2-print mt-3 text-center">
+                        <p id="demo2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js -->
+    <script src="./js/exercise5.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html, body{ 
+    font-size: 18px;
+}
+
+.card-header {
+    color: white;
+}
+
+#inputDiemChuan {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+#inputDiem1,#inputDiem2,#inputDiem3 {
+    text-align: center;
+    width: 300px;
+    margin-left: 20px;
+}
+
+
+.card-info1,.card-info2 {
+    padding-left: 10px;
+}
+
+.card-item {
+    width: 90%;
+}
+
+#khuVuc,#doiTuong {
+    width: 400px;
+    height: 50px;
+}
+
+#doiTuong {
+    margin-left: -10px;
+}
+
+button {
+    background-color: #007bff;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+#demo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* EXERCISE 2 */
+
+.exercise2 button {
+    background-color: #17a2b8;
+    cursor: pointer;
+    border: 1px solid #17a2b8;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+#hoTen {
+    width: 70%;
+    text-align: center;
+}
+
+#dientieuthu {
+    text-align: center;
+}
